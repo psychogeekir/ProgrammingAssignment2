@@ -23,7 +23,11 @@ makeCacheMatrix <- function(x = matrix()) {
              getivm = getivm)
 }
 
-## calculating the inverse of the matrix based on the above function. It first checks to see if the ivm has already been calculated. If so, it gets the ivm from the cache and skips the computation. Otherwise, it calculates the ivm of the data and sets the value of the ivm in the cache via the setivm function.
+## calculating the inverse of the matrix based on the above function. 
+## It first checks to see if the ivm has already been calculated. 
+## If so, it gets the ivm from the cache and skips the computation. 
+## Otherwise, it calculates the ivm of the data and sets the value of 
+## the ivm in the cache via the setivm function.
 
 cacheSolve <- function(x, ...) {
         ivm <- x$getivm()
